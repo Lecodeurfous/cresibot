@@ -1,0 +1,23 @@
+{
+  "name": "cresibot",
+  "version": "0.1.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.0.0-dev"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lecodeurfous/cresibot.git"
+  },
+  "author": "Etienne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lecodeurfous/cresibot/issues"
+  },
+  "homepage": "https://github.com/Lecodeurfous/cresibot#readme"
+}
