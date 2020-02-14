@@ -8,8 +8,24 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
-    msg.reply('Pong!');
+    msg.reply('Pong!');s
   }
+});
+
+client.on('guildMemberAdd', user =>{
+ let bvnembed = new Discord.RicheEmbed()
+   .setColor("#48fb00")
+   .setAuthor(user.user.username, user.user.displayAvatarURL)
+   .setDescription("Bienvenue " + user + "sur le serveur" + user.guimd.name + "!")
+   .setFooter(user.guild.name + "Bot crésibot")
+   user.guild.channels.get("674290099047104513").send(bvnembed);
+ 
+  
+});
+
+client.on('guildMemberRemove', user =>{
+  user.guild.channels.get("674290099047104513").send(user.user.username + "a quitté le serveur :sob: ");
+  
 });
 
 client.login(process.env.TOKEN);
