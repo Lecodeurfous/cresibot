@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
-    msg.reply('Pong!');s
+    msg.reply('Pong!');
   }
 });
 
@@ -24,7 +24,12 @@ client.on('guildMemberAdd', user =>{
 });
 
 client.on('guildMemberRemove', user =>{
-  user.guild.channels.get("674290099047104513").send(user.user.username + "a quitté le serveur :sob: ");
+  let aurvbed = new Discord.RicheEmbed()
+   .setColor("#48fb00")
+   .setAuthor(user.user.username, user.user.displayAvatarURL)
+   .setDescription("Au revoir" + user.user.username )
+   .setFooter(user.guild.name + "Bot crésibot")
+   user.guild.channels.get("674290099047104513").send(aurvbed);
   
 });
 
