@@ -1,7 +1,7 @@
 module.exports = (client) => {
     client.user.setPresence({
         game: {
-            name: "Je suis cresibot"
+            name: "!help --> Affiche l'aide !"
         }
     });
 };
