@@ -14,11 +14,17 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg =>{
+  if(msg.content === 'c*test'){
+    message.channels.send('5/5 ')
+  }
+})
+
 client.on('guildMemberAdd', user =>{
  let bvnembed = new Discord.RicheEmbed()
    .setColor("#48fb00")
    .setAuthor(user.user.username, user.user.displayAvatarURL)
-   .setDescription("Bienvenue " + user + "sur le serveur" + user.guimd.name + "!")
+   .setDescription("Bienvenue " + user + "sur le serveur" + user.guild.name + "!")
    .setFooter(user.guild.name + "Bot crésibot")
    user.guild.channels.get("674290099047104513").send(bvnembed);
  
