@@ -9,16 +9,11 @@ client.on('ready', () => {
 
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
+  if (msg.content === 'test') {
+    msg.reply(`5/5`+ user.user.displayAvatarURL);
   }
 });
 
-client.on('message', msg =>{
-  if(msg.content === 'c*test'){
-    message.channels.send('5/5 ')
-  }
-})
 
 client.on('guildMemberAdd', user =>{
  let bvnembed = new Discord.RicheEmbed()
