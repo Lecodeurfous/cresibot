@@ -1,2 +1,1 @@
-exports.TOKEN = process.env.TOKEN
-exports.PREFIX = "p;"
+exports.PREFIX =  "p!"
