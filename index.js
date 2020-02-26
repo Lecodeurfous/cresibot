@@ -12,11 +12,7 @@ client.on('ready', () => {
 client.on("message", msg => {
   if (msg.content.startsWith(`${PREFIX}ping`)) msg.channel.send("Pong!")
 
-}).
+});
 
-
-
-
-
-client.login(TOKEN);
+client.login(process.env.TOKEN)
 
