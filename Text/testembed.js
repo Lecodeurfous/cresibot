@@ -13,7 +13,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
   
-  if (message.content === 'p!embed') {
+  if (message.content === 'embed') {
     // We can create embeds using the MessageEmbed constructor
     // Read more about all that you can do with the constructor
     // over at https://discord.js.org/#/docs/main/stable/class/RichEmbed
