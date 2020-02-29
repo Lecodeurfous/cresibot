@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const fs = require('fs');
-const TOKEN = require('config.js')
+
 
 fs.readdir('./Commandes/', (error, f) => {
     if (error) { return console.error(error); }
